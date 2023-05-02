@@ -16,5 +16,5 @@ const images = [
 
 const imgRes = images.map(({url, alt}) => `<li><img class="myImg" src="${url}" alt="${alt}"></img></li>`).join('');
 // console.log(imgRes);
-const imgGall = document.querySelector(".gallery");
-imgGall.insertAdjacentHTML("afterbegin", imgRes);
+const imgGallEl = document.querySelector(".gallery");
+imgGallEl.insertAdjacentHTML("afterbegin", imgRes);
